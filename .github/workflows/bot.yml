@@ -21,11 +21,9 @@ jobs:
       - run: git pull
       - run: node 1_gs2.js
       - run: node 3_extract_doi.js
-      - run: node 2_totsv.js
       - run: |
             git config user.name  "ahmedhossain09"
             git config user.email "88017722+actions-user@users.noreply.github.com"
             git add -f 'scholar-data-U9tD0ywAAAAJ.json'
-            git add -f 'publications-U9tD0ywAAAAJ.tsv'
             git commit -m "🤖 Auto commit by Gihub Actions Bot 🤖"
             git push --force
